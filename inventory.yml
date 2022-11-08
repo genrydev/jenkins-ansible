@@ -5,15 +5,10 @@ all:
       hosts:
         iis1:
           ansible_host: iis1.eastus.cloudapp.azure.com
-          ansible_user: azureuser
-          ansible_password: '123qwe/*-123qwe/*-'
-          ansible_port: 5986
           ansible_connection: winrm
+          ansible_user: azureuser
+          ansible_password: 123qwe/*-123qwe/*-
+          ansible_port: 5986          
           ansible_winrm_transport: basic
-          ansible_winrm_cert_validation: ignore
-          ansible_winrm_auth: credssp
+          ansible_winrm_server_cert_validation: ignore          
           ansible_winrm_message_encryption: never
-          ansible_winrm_connection_timeout: 600
-          ansible_winrm_read_timeout: 420
-          ansible_winrm_operation_timeout: 300
-          ansible_winrm_reconnection_retries: 5
