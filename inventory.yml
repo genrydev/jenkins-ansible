@@ -1,0 +1,18 @@
+all:
+  vars:
+  children:
+    iis:
+      hosts:
+        iis1:
+          ansible_host: iis1.eastus.cloudapp.azure.com
+          ansible_user: azureuser
+          ansible_password: '123qwe/*-123qwe/*-'
+          ansible_port: 5986
+          ansible_connection: psrp
+          ansible_psrp_cert_validation: ignore
+          ansible_psrp_auth: credssp
+          ansible_psrp_message_encryption: never
+          ansible_psrp_connection_timeout: 600
+          ansible_psrp_read_timeout: 420
+          ansible_psrp_operation_timeout: 300
+          ansible_psrp_reconnection_retries: 5

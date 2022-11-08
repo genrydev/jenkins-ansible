@@ -1,0 +1,5 @@
+---
+- name: Create folder to download
+  win_file:
+    path: C:\ansible
+    state: directory
