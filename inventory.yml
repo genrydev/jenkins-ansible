@@ -8,7 +8,8 @@ all:
           ansible_user: azureuser
           ansible_password: '123qwe/*-123qwe/*-'
           ansible_port: 5986
-          ansible_connection: psrp
+          # ansible_connection: psrp
+          ansible_connection: winrm
           ansible_psrp_cert_validation: ignore
           ansible_psrp_auth: credssp
           ansible_psrp_message_encryption: never
